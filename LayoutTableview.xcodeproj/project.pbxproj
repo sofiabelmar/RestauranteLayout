@@ -12,6 +12,8 @@
 		3D22CABF2554D81B00F60912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D22CABD2554D81B00F60912 /* Main.storyboard */; };
 		3D22CAC12554D81C00F60912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D22CAC02554D81C00F60912 /* Assets.xcassets */; };
 		3D22CAC42554D81C00F60912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D22CAC22554D81C00F60912 /* LaunchScreen.storyboard */; };
+		3D22CAD12554EC5400F60912 /* Restaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D22CAD02554EC5400F60912 /* Restaurante.swift */; };
+		3D22CAD32554F3A200F60912 /* RestauranteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D22CAD22554F3A200F60912 /* RestauranteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3D22CAC02554D81C00F60912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D22CAC32554D81C00F60912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D22CAC52554D81C00F60912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D22CAD02554EC5400F60912 /* Restaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurante.swift; sourceTree = "<group>"; };
+		3D22CAD22554F3A200F60912 /* RestauranteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,56 @@
 		3D22CAB82554D81B00F60912 /* LayoutTableview */ = {
 			isa = PBXGroup;
 			children = (
-				3D22CAB92554D81B00F60912 /* AppDelegate.swift */,
-				3D22CABB2554D81B00F60912 /* ViewController.swift */,
-				3D22CABD2554D81B00F60912 /* Main.storyboard */,
-				3D22CAC02554D81C00F60912 /* Assets.xcassets */,
-				3D22CAC22554D81C00F60912 /* LaunchScreen.storyboard */,
-				3D22CAC52554D81C00F60912 /* Info.plist */,
+				3D22CACF2554EBF000F60912 /* Config */,
+				3D22CACE2554EBD500F60912 /* Resources */,
+				3D22CACD2554EBC900F60912 /* Storyboards */,
+				3D22CACC2554EBB600F60912 /* Models */,
+				3D22CACB2554EB9E00F60912 /* Controllers */,
 			);
 			path = LayoutTableview;
+			sourceTree = "<group>";
+		};
+		3D22CACB2554EB9E00F60912 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D22CABB2554D81B00F60912 /* ViewController.swift */,
+				3D22CAD22554F3A200F60912 /* RestauranteTableViewCell.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3D22CACC2554EBB600F60912 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D22CAD02554EC5400F60912 /* Restaurante.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D22CACD2554EBC900F60912 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3D22CAC22554D81C00F60912 /* LaunchScreen.storyboard */,
+				3D22CABD2554D81B00F60912 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		3D22CACE2554EBD500F60912 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D22CAC02554D81C00F60912 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D22CACF2554EBF000F60912 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3D22CAB92554D81B00F60912 /* AppDelegate.swift */,
+				3D22CAC52554D81C00F60912 /* Info.plist */,
+			);
+			name = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +183,8 @@
 			files = (
 				3D22CABC2554D81B00F60912 /* ViewController.swift in Sources */,
 				3D22CABA2554D81B00F60912 /* AppDelegate.swift in Sources */,
+				3D22CAD32554F3A200F60912 /* RestauranteTableViewCell.swift in Sources */,
+				3D22CAD12554EC5400F60912 /* Restaurante.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

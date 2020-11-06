@@ -8,23 +8,23 @@
 
 import UIKit
 
-class   ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UITableViewController{
     
-    let restaurantes = [Restaurante(nombre:"Basil Thai Restaurant & Bar", reviews: 1038, direccion: "1175 Folsom St, SoMa", filtro: "Thai, Seafood, Salad", descripcion: "Mmm. Maybe I was really hungry.Maybe it was just really good. But I'll be back if I'm in the area and looking for some Thai food", masInfo: "The restaurant itself...", distancia: 0.81, cantidad: "$$")]
+    let restaurantes = [Restaurante(nombre:"Basil Thai Restaurant & Bar", reviews: 1038, direccion: "1175 Folsom St, SoMa", filtro: "Thai, Seafood, Salad", descripcion: "Mmm. Maybe I was really hungry.Maybe it was just really good. But I'll be back if I'm in the area and looking for some Thai food", masInfo: "The restaurant itself...", distancia: 0.81, cantidad: "$$"), Restaurante(nombre:"Basil Thai Restaurant & Bar", reviews: 1038, direccion: "1175 Folsom St, SoMa", filtro: "Thai, Seafood, Salad", descripcion: "Mmm. Maybe I was really hungry.Maybe it was just really good. But I'll be back if I'm in the area and looking for some Thai food", masInfo: "The restaurant itself...", distancia: 0.81, cantidad: "$$")]
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantes.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaRestaurante") as! RestauranteTableViewCell
         let restaurante = restaurantes[indexPath.row]
         
